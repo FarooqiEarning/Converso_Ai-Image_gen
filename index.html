@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converso Ai – Image Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <header>
+            <h1>Converso Ai – Image Generator</h1>
+        </header>
+
+        <main>
+            <div class="card input-card">
+                <div class="form-group">
+                    <label for="prompt">Enter your image prompt</label>
+                    <textarea id="prompt" placeholder="Describe the image you want to generate..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="model">Select Model</label>
+                    <select id="model">
+                        <option value="flux-1-ultra">Conso Large (Ultra)</option>
+                        <option value="imagen-3-pro">Conso Large (Pro)</option>
+                        <option value="dall-e-3">Conso Large (Nell-1)</option>
+                        <option value="leonardo-phoenix">Conso Large (Nell-2)</option>
+                        <option value="recraft-v3">Conso Large (Deve)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="size">Image Size</label>
+                    <select id="size">
+                        <option value="512x512" selected>512x512</option>
+                        <option value="1024x1024">1024x1024</option>
+                    </select>
+                </div>
+
+                <button id="generate" class="primary-button">Generate Image</button>
+            </div>
+
+            <div class="card output-card hidden">
+                <div class="loading-spinner hidden"></div>
+                <div class="result-container">
+                    <img id="generated-image" alt="Generated image">
+                    <button id="download" class="secondary-button">Download Image</button>
+                </div>
+            </div>
+
+            <div class="error-message hidden"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
