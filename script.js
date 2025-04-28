@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch(API_ENDPOINT, {
                 method: 'POST',
+                mode: 'cors',
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${API_KEY}`
