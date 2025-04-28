@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     downloadButton.addEventListener('click', downloadImage);
 
     async function generateImage() {
-        const prompt = promptInput.value
+        const prompt = promptInput.value;
         const model = modelSelect.value;
         const size = sizeSelect.value;
 
