@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     'Authorization': `Bearer ${API_KEY}`
                 },
                 body: JSON.stringify({
-                    model,
-                    prompt,
-                    size
+                    'model': model,
+                    'prompt':prompt,
+                    'size':size
                 })
             });
 
