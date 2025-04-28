@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 mode: 'cors',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${API_KEY}`
+                    'Authorization': 'Bearer ' + ${API_KEY}
                 },
                 body: JSON.stringify({
                     'model': model,
