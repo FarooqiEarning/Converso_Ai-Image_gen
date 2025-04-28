@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 mode: 'cors',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Referer': '',
                     'Authorization': `Bearer ${API_KEY}`
                 },
                 body: JSON.stringify({
